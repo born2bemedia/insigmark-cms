@@ -102,29 +102,5 @@ export const Articles: CollectionConfig = {
       localized: true,
     },
   ],
-  hooks: {
-    /*afterChange: [
-      async ({ doc }) => {
-        try {
-          const response = await fetch('https://modulixo.com/api/revalidate', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              tags: ['articles'],
-            }),
-          })
-
-          if (!response.ok) {
-            console.error('Cache revalidation failed:', response.statusText)
-          } else {
-            console.log('Cache revalidation triggered successfully.')
-          }
-        } catch (error) {
-          console.error('Error triggering cache revalidation:', error)
-        }
-      },
-    ],*/
-  },
+  hooks: {},
 };
