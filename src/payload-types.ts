@@ -236,6 +236,7 @@ export interface Article {
   id: number;
   title: string;
   slug?: string | null;
+  featured?: boolean | null;
   image?: (number | null) | Media;
   excerpt?: string | null;
   read_time?: string | null;
@@ -440,6 +441,7 @@ export interface MediaSelect<T extends boolean = true> {
 export interface ArticlesSelect<T extends boolean = true> {
   title?: T;
   slug?: T;
+  featured?: T;
   image?: T;
   excerpt?: T;
   read_time?: T;

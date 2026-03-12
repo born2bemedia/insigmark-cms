@@ -36,6 +36,15 @@ export const Articles: CollectionConfig = {
       },
     },
     {
+      name: "featured",
+      type: "checkbox",
+      label: "Featured",
+      defaultValue: false,
+      admin: {
+        position: "sidebar",
+      },
+    },
+    {
       name: "image",
       type: "upload",
       relationTo: "media",
@@ -44,6 +53,7 @@ export const Articles: CollectionConfig = {
         position: "sidebar",
       },
     },
+
     {
       name: "excerpt",
       type: "text",
