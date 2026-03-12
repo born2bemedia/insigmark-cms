@@ -79,7 +79,7 @@ export const Articles: CollectionConfig = {
         { label: "Optimization", value: "optimization" },
       ],
       required: false,
-      localized: true,
+      localized: false,
     },
     {
       name: "content",
