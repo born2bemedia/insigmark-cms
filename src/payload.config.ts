@@ -81,7 +81,7 @@ export default buildConfig({
   ],
   email: nodemailerAdapter({
     defaultFromName: "Insigmark",
-    defaultFromAddress: "noreply@insigmark.com",
+    defaultFromAddress: "noreply@theinsigmark.com",
     transportOptions: nodemailerSendgrid({
       apiKey: process.env.SENDGRID_API_KEY ?? "",
     }),
